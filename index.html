@@ -3,125 +3,235 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amber Mazzeo | Digital Implementation Specialist</title>
+  <title>Amber Mazzeo | Technical Support Engineer</title>
   <style>
     body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #f9f8f7;
-      color: #3c3c3c;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      background-color: #fff;
+      color: #645f5f;
       line-height: 1.6;
     }
+
     header {
       text-align: center;
       padding: 60px 20px 30px;
-    }
-    header img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 3px solid #d2cbc7;
-      object-fit: cover;
-    }
-    h1 {
-      font-size: 1.8rem;
-      margin-top: 20px;
+      background-color: #d2cbc7;
       color: #645f5f;
     }
-    h2 {
+
+    .header-container {
+      display: inline-block;
+      text-align: center;
+    }
+
+    header img {
+      width: 140px;
+      height: auto;
+      display: block;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      border: 2px solid #99857a;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #99857a;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 10px 0 5px;
+      color: #645f5f;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      font-size: 1rem;
       color: #99857a;
-      margin-top: 40px;
-      text-align: center;
+      margin: 0;
     }
-    .about {
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 0 20px;
-    }
-    .projects {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+
+    main {
       max-width: 900px;
-      margin: 30px auto;
+      margin: 50px auto;
       padding: 0 20px;
     }
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #645f5f;
+      border-bottom: 2px solid #d2cbc7;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 30px;
+    }
+
+    .about p {
+      text-align: center;
+      font-size: 1.1rem;
+      max-width: 750px;
+      margin: 0 auto 15px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background-color: #f7f6f5;
+      border: 1px solid #d2cbc7;
+      border-radius: 10px;
       padding: 20px;
-      width: 250px;
+      text-align: center;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    .project:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 2px 10px rgba(100, 95, 95, 0.15);
     }
-    .card a {
-      text-decoration: none;
+
+    .project h3 {
       color: #645f5f;
-      font-weight: bold;
+      margin-bottom: 10px;
     }
+
+    .project p {
+      color: #99857a;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .project a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #99857a;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .project a:hover {
+      background-color: #645f5f;
+    }
+
     .resume {
-      display: block;
-      width: max-content;
-      margin: 50px auto;
-      padding: 12px 24px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .resume a {
+      display: inline-block;
       background-color: #99857a;
       color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
       text-decoration: none;
-      border-radius: 30px;
-      transition: background 0.3s ease;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
-    .resume:hover {
-      background-color: #7f6c64;
+
+    .resume a:hover {
+      background-color: #645f5f;
     }
+
+    .contact {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .contact a {
+      color: #99857a;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .contact a:hover {
+      color: #645f5f;
+    }
+
     footer {
       text-align: center;
+      padding: 20px;
       font-size: 0.9rem;
       color: #99857a;
-      padding: 30px;
+      border-top: 1px solid #d2cbc7;
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
-    <img src="drawing.jpg" alt="Amber Mazzeo portrait illustration" />
-    <h1>Amber Mazzeo</h1>
-    <p>Technical Support Engineer & Digital Implementation Specialist</p>
+    <div class="header-container">
+      <img src="https://betterapearlwithaflaw.com/pearllogo.png" alt="Amber Mazzeo logo" />
+      <h1>Amber Mazzeo</h1>
+      <p>Technical Support Engineer & Digital Implementation Specialist</p>
+    </div>
   </header>
 
-  <section class="about">
-    <p>I’m a Technical Support Engineer and Digital Implementation Specialist with over a decade of experience turning complex CRM and marketing automation challenges into smooth, user-friendly solutions. I thrive on troubleshooting, teaching, and building processes that make systems—and teams—work better.</p>
-    <p>Curiosity, empathy, and problem-solving drive my work every day, shaped by years in customer success, customer support, and life as a mom. Whether it’s documenting complex workflows or leading end-to-end digital deployments, I focus on creating clarity and impact.</p>
-  </section>
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I’m a Technical Support Engineer and Digital Implementation Specialist with over a decade of experience turning complex CRM and marketing automation challenges into smooth, user-friendly solutions. 
+        I thrive on troubleshooting, teaching, and building processes that make systems—and teams—work better.  
+      </p>
+      <p>
+        Curiosity, empathy, and problem-solving drive my work every day, shaped by years in customer success, customer support, and life as a mom. 
+        Whether it’s documenting complex workflows or leading end-to-end digital deployments, I focus on creating clarity and impact.
+      </p>
+    </section>
 
-  <h2>Featured Articles & Projects</h2>
-  <section class="projects">
-    <div class="card">
-      <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7706/doc-merge-using-multiselect-conditionals-within-a-table" target="_blank">Doc Merge: Using Multiselect Conditionals</a>
-    </div>
-    <div class="card">
-      <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7854/doc-merge-tips-for-using-doc-merge-and-photos-in-your-templates" target="_blank">Doc Merge: Tips for Photos in Templates</a>
-    </div>
-    <div class="card">
-      <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7705/doc-merge---removing-bullets-from-email-address" target="_blank">Doc Merge: Removing Bullets from Email Address</a>
-    </div>
-    <div class="card">
-      <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7704/doc-merge-include-currency-and-symbol-related-to-record" target="_blank">Doc Merge: Including Currency & Symbol</a>
-    </div>
-  </section>
+    <section class="projects">
+      <h2>Projects & Articles</h2>
+      <div class="project">
+        <h3>Doc Merge: Using Multiselect Conditionals Within a Table</h3>
+        <p>Advanced Doc Merge guide for dynamic table content in SugarCRM templates.</p>
+        <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7706/doc-merge-using-multiselect-conditionals-within-a-table" target="_blank">Read Article</a>
+      </div>
+      <div class="project">
+        <h3>Doc Merge Tips: Using Photos in Templates</h3>
+        <p>Practical advice for embedding and optimizing images within Doc Merge templates.</p>
+        <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7854/doc-merge-tips-for-using-doc-merge-and-photos-in-your-templates" target="_blank">Read Article</a>
+      </div>
+      <div class="project">
+        <h3>Doc Merge: Removing Bullets from Email Address</h3>
+        <p>Streamlining output formatting for cleaner, professional CRM documents.</p>
+        <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7705/doc-merge---removing-bullets-from-email-address" target="_blank">Read Article</a>
+      </div>
+      <div class="project">
+        <h3>Doc Merge: Include Currency & Symbol Related to Record</h3>
+        <p>Techniques for dynamic currency and symbol display within merged CRM documents.</p>
+        <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7704/doc-merge-include-currency-and-symbol-related-to-record" target="_blank">Read Article</a>
+      </div>
+    </section>
 
-  <a class="resume" href="https://drive.google.com/file/d/17tyq2n4Uun18tDJ9T7PhI3OxPN-ldXt4/view?usp=sharing" target="_blank">Download My Resume</a>
+    <div class="resume">
+      <a href="https://drive.google.com/file/d/17tyq2n4Uun18tDJ9T7PhI3OxPN-ldXt4/view?usp=sharing" target="_blank">📄 Download My Resume</a>
+    </div>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p>
+        📧 <a href="mailto:ambermazzeo@gmail.com">ambermazzeo@gmail.com</a>
+      </p>
+      <p>
+        💼 <a href="https://www.linkedin.com/in/ambermazzeo/" target="_blank">linkedin.com/in/ambermazzeo</a>
+      </p>
+    </section>
+  </main>
 
   <footer>
-    © 2025 Amber Mazzeo | Built with ❤️ using GitHub Pages
+    <p>© 2025 Amber Mazzeo — Designed with toddler snacks and coffee ☕</p>
   </footer>
-
 </body>
 </html>
