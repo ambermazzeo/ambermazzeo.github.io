@@ -1,108 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amber Mazzeo</title>
-    <style>
-        /* Base styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 40px auto;
-            max-width: 800px;
-            line-height: 1.7;
-            color: #645f5f; /* main text color */
-            background-color: #f7f4f2;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amber Mazzeo</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 40px auto;
+      max-width: 800px;
+      line-height: 1.7;
+      color: #645f5f; /* main text color */
+      background-color: #f7f4f2;
+    }
 
-        h1 {
-            font-size: 2.8em;
-            color: #645f5f;
-            margin-bottom: 0.2em;
-        }
+    h1 {
+      font-size: 2.8em;
+      color: #645f5f;
+      margin-bottom: 0.2em;
+    }
 
-        h2 {
-            color: #645f5f;
-            border-bottom: 2px solid #99857a;
-            padding-bottom: 5px;
-            margin-top: 2.5em;
-        }
+    h2 {
+      color: #645f5f;
+      border-bottom: 2px solid #99857a;
+      padding-bottom: 5px;
+      margin-top: 2.5em;
+    }
 
-        p {
-            margin-bottom: 1.2em;
-        }
+    h3 {
+      color: #645f5f;
+      margin-bottom: 0.3em;
+    }
 
-        /* Button styles */
-        .button {
-            display: inline-block;
-            margin-top: 1em;
-            padding: 12px 24px;
-            font-size: 1em;
-            background-color: #99857a;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 6px;
-            transition: background-color 0.3s, transform 0.2s;
-        }
+    p {
+      margin-bottom: 1.2em;
+    }
 
-        .button:hover {
-            background-color: #645f5f;
-            transform: translateY(-2px);
-        }
+    /* Button styles */
+    .button {
+      display: inline-block;
+      margin-top: 0.5em;
+      padding: 10px 20px;
+      font-size: 0.95em;
+      background-color: #99857a;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
 
-        /* Section spacing */
-        .section {
-            margin-top: 3em;
-        }
+    .button:hover {
+      background-color: #645f5f;
+      transform: translateY(-2px);
+    }
 
-        /* Footer */
-        footer {
-            margin-top: 4em;
-            font-size: 0.9em;
-            color: #99857a;
-            text-align: center;
-        }
+    /* Section spacing */
+    .section {
+      margin-top: 3em;
+    }
 
-        /* Smooth scroll for internal links */
-        html {
-            scroll-behavior: smooth;
-        }
+    /* Projects grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-top: 1em;
+    }
 
-        /* Links */
-        a {
-            color: #99857a;
-            text-decoration: none;
-        }
+    @media(min-width: 600px) {
+      .projects-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
 
-        a:hover {
-            color: #645f5f;
-        }
-    </style>
+    .project {
+      background-color: #d2cbc7;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 4em;
+      font-size: 0.9em;
+      color: #99857a;
+      text-align: center;
+    }
+
+    /* Smooth scroll for internal links */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Links */
+    a {
+      color: #99857a;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #645f5f;
+    }
+  </style>
 </head>
 <body>
-    <h1>Amber Mazzeo</h1>
+  <!-- Header -->
+  <h1>Amber Mazzeo</h1>
 
-    <div class="about">
-        <p>Seasoned Technical Support Engineer and Digital Implementation Specialist with over a decade of experience delivering customer-centric technical solutions, driving platform adoption, and supporting enterprise-level CRM and marketing automation environments. Proven track record of troubleshooting complex applications, databases, and integration issues, while collaborating with product and engineering teams to enhance system performance and stability. Adept at leading end-to-end digital deployments, training cross-functional users, and optimizing communication workflows for global hospitality and SaaS clients. Recognized for rapidly mastering new technologies, producing high-impact documentation, and enabling seamless product rollouts that improve customer engagement, retention, and operational efficiency.</p>
+  <!-- About Section -->
+  <div class="about section">
+    <p>I’m a Technical Support Engineer and Digital Implementation Specialist with over a decade of experience turning complex CRM and marketing automation challenges into smooth, user-friendly solutions. I thrive on troubleshooting, teaching, and building processes that make systems—and teams—work better.</p>
 
-        <p>Driven by curiosity, empathy, and a problem-solver mindset shaped both by motherhood and over a decade in customer success.</p>
+    <p>Curiosity, empathy, and problem-solving drive my work every day, shaped by years in customer success, customer support and life as a mom. Whether it’s documenting complex workflows or leading end-to-end digital deployments, I focus on creating clarity and impact.</p>
 
-        <!-- Replace YOUR_GOOGLE_DRIVE_LINK with your shareable resume link -->
-        <a href="https://drive.google.com/file/d/17tyq2n4Uun18tDJ9T7PhI3OxPN-ldXt4/view?usp=sharing" class="button" target="_blank" rel="noopener noreferrer">Download Resume</a>
+    <!-- Replace YOUR_GOOGLE_DRIVE_LINK with your shareable resume link -->
+    <a href="https://drive.google.com/file/d/17tyq2n4Uun18tDJ9T7PhI3OxPN-ldXt4/view?usp=sharing" class="button" target="_blank" rel="noopener noreferrer">Download Resume</a>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="section" id="projects">
+    <h2>Projects & Guides</h2>
+    <div class="projects-grid">
+
+      <div class="project">
+        <h3>Doc Merge Using Multiselect Conditionals Within a Table</h3>
+        <p>Advanced guide on using multiselect conditionals for Doc Merge in SugarCRM enterprise templates.</p>
+        <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7706/doc-merge-using-multiselect-conditionals-within-a-table" class="button" target="_blank">Read Article</a>
+      </div>
+
+      <div class="project">
+        <h3>Doc Merge Tips for Using Photos in Templates</h3>
+        <p>Step-by-step tips for integrating images into Doc Merge templates effectively.</p>
+        <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7854/doc-merge-tips-for-using-doc-merge-and-photos-in-your-templates" class="button" target="_blank">Read Article</a>
+      </div>
+
+      <div class="project">
+        <h3>Removing Bullets from Email Address in Doc Merge</h3>
+        <p>Guide on formatting email lists in Doc Merge by removing unwanted bullet points.</p>
+        <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7705/doc-merge---removing-bullets-from-email-address" class="button" target="_blank">Read Article</a>
+      </div>
+
+      <div class="project">
+        <h3>Include Currency and Symbol Related to Record in Doc Merge</h3>
+        <p>How to dynamically display currency symbols in Doc Merge templates for enterprise records.</p>
+        <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7704/doc-merge-include-currency-and-symbol-related-to-record" class="button" target="_blank">Read Article</a>
+      </div>
+
     </div>
- <!-- 
-    <div class="section" id="projects">
-        <h2>Projects</h2>
-        <p>Coming soon: examples of digital deployments, documentation, or CRM automation projects.</p>
-    </div>-->
+  </div>
 
-    <div class="section" id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at: <a href="mailto:ambersmazzeo@gmail.com">ambersmazzeo@gmail.com</a></p>
-    </div>
+  <!-- Contact Section -->
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at: <a href="mailto:ambersmazzeo@gmail.com">ambersmazzeo@gmail.com</a> or connect on <a href="https://www.linkedin.com/in/ambermazzeo/" target="_blank">LinkedIn</a>.</p>
+  </div>
 
-    <footer>
-        &copy; 2025 Amber Mazzeo
-    </footer>
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Amber Mazzeo
+  </footer>
 </body>
 </html>
