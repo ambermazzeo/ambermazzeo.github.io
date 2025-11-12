@@ -1,163 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amber Mazzeo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amber Mazzeo | Digital Implementation Specialist</title>
   <style>
-    /* Base styles */
     body {
-      font-family: 'Arial', sans-serif;
-      margin: 40px auto;
-      max-width: 800px;
-      line-height: 1.7;
-      color: #645f5f; /* main text color */
-      background-color: #f7f4f2;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #f9f8f7;
+      color: #3c3c3c;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
     }
-
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid #d2cbc7;
+      object-fit: cover;
+    }
     h1 {
-      font-size: 2.8em;
+      font-size: 1.8rem;
+      margin-top: 20px;
       color: #645f5f;
-      margin-bottom: 0.2em;
     }
-
     h2 {
-      color: #645f5f;
-      border-bottom: 2px solid #99857a;
-      padding-bottom: 5px;
-      margin-top: 2.5em;
-    }
-
-    h3 {
-      color: #645f5f;
-      margin-bottom: 0.3em;
-    }
-
-    p {
-      margin-bottom: 1.2em;
-    }
-
-    /* Button styles */
-    .button {
-      display: inline-block;
-      margin-top: 0.5em;
-      padding: 10px 20px;
-      font-size: 0.95em;
-      background-color: #99857a;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-
-    .button:hover {
-      background-color: #645f5f;
-      transform: translateY(-2px);
-    }
-
-    /* Section spacing */
-    .section {
-      margin-top: 3em;
-    }
-
-    /* Projects grid */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      margin-top: 1em;
-    }
-
-    @media(min-width: 600px) {
-      .projects-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    .project {
-      background-color: #d2cbc7;
-      padding: 15px;
-      border-radius: 8px;
-    }
-
-    footer {
-      margin-top: 4em;
-      font-size: 0.9em;
       color: #99857a;
+      margin-top: 40px;
       text-align: center;
     }
-
-    /* Smooth scroll for internal links */
-    html {
-      scroll-behavior: smooth;
+    .about {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 20px;
     }
-
-    /* Links */
-    a {
-      color: #99857a;
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .card a {
       text-decoration: none;
-    }
-
-    a:hover {
       color: #645f5f;
+      font-weight: bold;
+    }
+    .resume {
+      display: block;
+      width: max-content;
+      margin: 50px auto;
+      padding: 12px 24px;
+      background-color: #99857a;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+    .resume:hover {
+      background-color: #7f6c64;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #99857a;
+      padding: 30px;
     }
   </style>
 </head>
 <body>
-  <!-- Header -->
-  <h1>Amber Mazzeo</h1>
 
-  <!-- About Section -->
-  <div class="about section">
+  <header>
+    <img src="drawing.jpg" alt="Amber Mazzeo portrait illustration" />
+    <h1>Amber Mazzeo</h1>
+    <p>Technical Support Engineer & Digital Implementation Specialist</p>
+  </header>
+
+  <section class="about">
     <p>I’m a Technical Support Engineer and Digital Implementation Specialist with over a decade of experience turning complex CRM and marketing automation challenges into smooth, user-friendly solutions. I thrive on troubleshooting, teaching, and building processes that make systems—and teams—work better.</p>
+    <p>Curiosity, empathy, and problem-solving drive my work every day, shaped by years in customer success, customer support, and life as a mom. Whether it’s documenting complex workflows or leading end-to-end digital deployments, I focus on creating clarity and impact.</p>
+  </section>
 
-    <p>Curiosity, empathy, and problem-solving drive my work every day, shaped by years in customer success, customer support and life as a mom. Whether it’s documenting complex workflows or leading end-to-end digital deployments, I focus on creating clarity and impact.</p>
-
-    <!-- Replace YOUR_GOOGLE_DRIVE_LINK with your shareable resume link -->
-    <a href="https://drive.google.com/file/d/17tyq2n4Uun18tDJ9T7PhI3OxPN-ldXt4/view?usp=sharing" class="button" target="_blank" rel="noopener noreferrer">Download Resume</a>
-  </div>
-
-  <!-- Projects Section -->
-  <div class="section" id="projects">
-    <h2>Projects & Guides</h2>
-    <div class="projects-grid">
-
-      <div class="project">
-        <h3>Doc Merge Using Multiselect Conditionals Within a Table</h3>
-        <p>Advanced guide on using multiselect conditionals for Doc Merge in SugarCRM enterprise templates.</p>
-        <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7706/doc-merge-using-multiselect-conditionals-within-a-table" class="button" target="_blank">Read Article</a>
-      </div>
-
-      <div class="project">
-        <h3>Doc Merge Tips for Using Photos in Templates</h3>
-        <p>Step-by-step tips for integrating images into Doc Merge templates effectively.</p>
-        <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7854/doc-merge-tips-for-using-doc-merge-and-photos-in-your-templates" class="button" target="_blank">Read Article</a>
-      </div>
-
-      <div class="project">
-        <h3>Removing Bullets from Email Address in Doc Merge</h3>
-        <p>Guide on formatting email lists in Doc Merge by removing unwanted bullet points.</p>
-        <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7705/doc-merge---removing-bullets-from-email-address" class="button" target="_blank">Read Article</a>
-      </div>
-
-      <div class="project">
-        <h3>Include Currency and Symbol Related to Record in Doc Merge</h3>
-        <p>How to dynamically display currency symbols in Doc Merge templates for enterprise records.</p>
-        <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7704/doc-merge-include-currency-and-symbol-related-to-record" class="button" target="_blank">Read Article</a>
-      </div>
-
+  <h2>Featured Articles & Projects</h2>
+  <section class="projects">
+    <div class="card">
+      <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7706/doc-merge-using-multiselect-conditionals-within-a-table" target="_blank">Doc Merge: Using Multiselect Conditionals</a>
     </div>
-  </div>
+    <div class="card">
+      <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7854/doc-merge-tips-for-using-doc-merge-and-photos-in-your-templates" target="_blank">Doc Merge: Tips for Photos in Templates</a>
+    </div>
+    <div class="card">
+      <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7705/doc-merge---removing-bullets-from-email-address" target="_blank">Doc Merge: Removing Bullets from Email Address</a>
+    </div>
+    <div class="card">
+      <a href="https://sugarclub.sugarcrm.com/explore/help-forums/enterprise-professional/f/enterprise-professional-questions/7704/doc-merge-include-currency-and-symbol-related-to-record" target="_blank">Doc Merge: Including Currency & Symbol</a>
+    </div>
+  </section>
 
-  <!-- Contact Section -->
-  <div class="section" id="contact">
-    <h2>Contact</h2>
-    <p>You can reach me at: <a href="mailto:ambersmazzeo@gmail.com">ambersmazzeo@gmail.com</a> or connect on <a href="https://www.linkedin.com/in/ambermazzeo/" target="_blank">LinkedIn</a>.</p>
-  </div>
+  <a class="resume" href="https://drive.google.com/file/d/17tyq2n4Uun18tDJ9T7PhI3OxPN-ldXt4/view?usp=sharing" target="_blank">Download My Resume</a>
 
-  <!-- Footer -->
   <footer>
-    &copy; 2025 Amber Mazzeo
+    © 2025 Amber Mazzeo | Built with ❤️ using GitHub Pages
   </footer>
+
 </body>
 </html>
